@@ -57,13 +57,23 @@
             font-size: 14px;
             margin-bottom: 10px;
         }
-        .product-image {
+        .product-image-container {
             width: 100%;
             height: 180px;
-            object-fit: contain;
             border-radius: 8px;
-            background: #f8f8f8;
             margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .product-image-container::before {
+            content: "🚗";
+            font-size: 64px;
         }
         .product-title {
             font-size: 14px;
@@ -156,7 +166,7 @@
 <div class="product-grid">
     <div class="product-card">
         <div class="product-rank">1</div>
-        <img class="product-image" src="https://images-na.ssl-images-amazon.com/images/I/B0D3LSZJK2.jpg" alt="FanttikRide N7 Pro" onerror="this.src='https://via.placeholder.com/320x180?text=FanttikRide+N7+Pro'">
+        <div class="product-image-container"></div>
         <div class="product-title"><a href="https://www.amazon.com/dp/B0D3LSZJK2" target="_blank">FanttikRide N7 Pro 电动摆动车带踏板</a></div>
         <span class="badge badge-12v">12V</span>
         <div class="product-meta">
@@ -167,7 +177,7 @@
     
     <div class="product-card">
         <div class="product-rank">2</div>
-        <img class="product-image" src="https://images-na.ssl-images-amazon.com/images/I/B0DB5K3JF4.jpg" alt="First Ride On Ford Raptor" onerror="this.src='https://via.placeholder.com/320x180?text=First+Ride+On'">
+        <div class="product-image-container" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
         <div class="product-title"><a href="https://www.amazon.com/dp/B0DB5K3JF4" target="_blank">First Ride On 24V 福特野马猛禽 2座骑车</a></div>
         <span class="badge badge-24v">24V</span> <span class="badge badge-licensed">授权车型</span>
         <div class="product-meta">
@@ -178,7 +188,7 @@
     
     <div class="product-card">
         <div class="product-rank">3</div>
-        <img class="product-image" src="https://images-na.ssl-images-amazon.com/images/I/B01N7B2Q4J.jpg" alt="Best Choice Products" onerror="this.src='https://via.placeholder.com/320x180?text=Best+Choice'">
+        <div class="product-image-container" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
         <div class="product-title"><a href="https://www.amazon.com/dp/B01N7B2Q4J" target="_blank">Best Choice Products 12V 儿童电动汽车</a></div>
         <span class="badge badge-12v">12V</span>
         <div class="product-meta">
@@ -189,7 +199,7 @@
     
     <div class="product-card">
         <div class="product-rank">4</div>
-        <img class="product-image" src="https://images-na.ssl-images-amazon.com/images/I/B0DZ3R72NS.jpg" alt="Best Choice 24V" onerror="this.src='https://via.placeholder.com/320x180?text=Best+Choice+24V'">
+        <div class="product-image-container" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
         <div class="product-title"><a href="https://www.amazon.com/dp/B0DZ3R72NS" target="_blank">Best Choice Products 24V 2座电动卡车</a></div>
         <span class="badge badge-24v">24V</span>
         <div class="product-meta">
@@ -200,7 +210,7 @@
     
     <div class="product-card">
         <div class="product-rank">5</div>
-        <img class="product-image" src="https://images-na.ssl-images-amazon.com/images/I/B0FPX2QKKB.jpg" alt="12V Swing Car" onerror="this.src='https://via.placeholder.com/320x180?text=Swing+Car'">
+        <div class="product-image-container" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
         <div class="product-title"><a href="https://www.amazon.com/dp/B0FPX2QKKB" target="_blank">12V 儿童电动摆动车 2合1秋千车</a></div>
         <span class="badge badge-12v">12V</span>
         <div class="product-meta">
@@ -211,7 +221,7 @@
     
     <div class="product-card">
         <div class="product-rank">6</div>
-        <img class="product-image" src="https://images-na.ssl-images-amazon.com/images/I/B0F5GHHDHC.jpg" alt="Gotrax RT1" onerror="this.src='https://via.placeholder.com/320x180?text=Gotrax+RT1'">
+        <div class="product-image-container" style="background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);"></div>
         <div class="product-title"><a href="https://www.amazon.com/dp/B0F5GHHDHC" target="_blank">Gotrax RT1 骑乘玩具 12V ATV</a></div>
         <span class="badge badge-12v">12V</span>
         <div class="product-meta">
@@ -222,7 +232,7 @@
     
     <div class="product-card">
         <div class="product-rank">7</div>
-        <img class="product-image" src="https://images-na.ssl-images-amazon.com/images/I/B0FXXGDSHQ.jpg" alt="Outfunny 2-Seater" onerror="this.src='https://via.placeholder.com/320x180?text=Outfunny'">
+        <div class="product-image-container" style="background: linear-gradient(135deg, #fddb92 0%, #d1fdff 100%);"></div>
         <div class="product-title"><a href="https://www.amazon.com/dp/B0FXXGDSHQ" target="_blank">Outfunny 2座骑乘汽车玩具 12V</a></div>
         <span class="badge badge-12v">12V</span>
         <div class="product-meta">
@@ -233,7 +243,7 @@
     
     <div class="product-card">
         <div class="product-rank">8</div>
-        <img class="product-image" src="https://images-na.ssl-images-amazon.com/images/I/B0D8N76GCP.jpg" alt="Paw Patrol" onerror="this.src='https://via.placeholder.com/320x180?text=Paw+Patrol'">
+        <div class="product-image-container" style="background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);"></div>
         <div class="product-title"><a href="https://www.amazon.com/dp/B0D8N76GCP" target="_blank">Paw Patrol Chase 6V Quad</a></div>
         <span class="badge badge-6v">6V</span> <span class="badge badge-licensed">IP授权</span>
         <div class="product-meta">
@@ -244,7 +254,7 @@
     
     <div class="product-card">
         <div class="product-rank">9</div>
-        <img class="product-image" src="https://images-na.ssl-images-amazon.com/images/I/B0DL9XJ9NS.jpg" alt="Mercedes CLS" onerror="this.src='https://via.placeholder.com/320x180?text=Mercedes'">
+        <div class="product-image-container" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);"></div>
         <div class="product-title"><a href="https://www.amazon.com/dp/B0DL9XJ9NS" target="_blank">Fillfulfun 授权奔驰 CLS 350 12V</a></div>
         <span class="badge badge-12v">12V</span> <span class="badge badge-licensed">授权车型</span>
         <div class="product-meta">
@@ -255,7 +265,7 @@
     
     <div class="product-card">
         <div class="product-rank">10</div>
-        <img class="product-image" src="https://images-na.ssl-images-amazon.com/images/I/B09V17VSMQ.jpg" alt="Mercedes G63" onerror="this.src='https://via.placeholder.com/320x180?text=Mercedes+G63'">
+        <div class="product-image-container" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
         <div class="product-title"><a href="https://www.amazon.com/dp/B09V17VSMQ" target="_blank">ANPABO 授权奔驰 G63 儿童汽车</a></div>
         <span class="badge badge-12v">12V</span> <span class="badge badge-licensed">授权车型</span>
         <div class="product-meta">
@@ -340,7 +350,7 @@
 
 <hr>
 
-<p class="note">*注：点击产品图片或标题可直接跳转到亚马逊页面。价格基于 HKD 汇率换算，实际美元价格以亚马逊官网为准。</p>
+<p class="note">*注：点击产品标题可直接跳转到亚马逊页面查看实图。价格基于 HKD 汇率换算，实际美元价格以亚马逊官网为准。</p>
 
 </body>
 </html>
